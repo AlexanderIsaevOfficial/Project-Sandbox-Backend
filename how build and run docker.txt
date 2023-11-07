@@ -1,0 +1,5 @@
+# Команды для докера
+
+docker build -t dev-gameback . -f Dockerfile
+
+docker run --name=go-dev-gameback -d -v /root/gameBack/public:/app/public/ -p 3030:3030 dev-gameback
